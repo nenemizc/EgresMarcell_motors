@@ -22,5 +22,16 @@ namespace Motors2
 			this.performance = performance;
 			this.priceInEur = priceInEur;
 		}
+
+		public string Brand { get => brand; }
+		public string Name { get => name; }
+		public int ReleaseYear { get => releaseYear; }
+		public double Performance { get => performance; }
+		public double PriceInEur { get => priceInEur; }
+
+		public override string ToString()
+		{
+			return $"{Brand} / {Name} / {ReleaseYear} / {Performance} / {PriceInEur}";
+		}
 	}
 }
